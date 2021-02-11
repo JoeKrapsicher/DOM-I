@@ -37,6 +37,70 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
+
+
+// Example: Update the img src for the logo\
+
+//Nav Bar
+
+document.querySelector('nav').children[0].style.color = "green";
+document.querySelector('nav').children[1].style.color = "green";
+document.querySelector('nav').children[2].style.color = "green";
+document.querySelector('nav').children[3].style.color = "green";
+document.querySelector('nav').children[4].style.color = "green";
+document.querySelector('nav').children[5].style.color = "green";
+
+
+document.querySelector('nav').children[0].textContent = (siteContent["nav"]["nav-item-1"]);
+document.querySelector('nav').children[1].textContent = (siteContent["nav"]["nav-item-2"]);
+document.querySelector('nav').children[2].textContent = (siteContent["nav"]["nav-item-3"]);
+document.querySelector('nav').children[3].textContent = (siteContent["nav"]["nav-item-4"]);
+document.querySelector('nav').children[4].textContent = (siteContent["nav"]["nav-item-5"]);
+document.querySelector('nav').children[5].textContent = (siteContent["nav"]["nav-item-6"]);
+
+// let anch = document.createElement("a")
+// document.querySelector('nav').children.append(anch);
+
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Header
+let domAwesome = "DOM IS AWESOME!";
+document.querySelector("h1").textContent = domAwesome;
+
+let getStarted = "Get Started!";
+document.querySelector("button").textContent = getStarted;
+
+let circleLogo = document.getElementById("cta-img");
+circleLogo.setAttribute('src', siteContent["cta"]["img-src"]);
+
+
+//Main Content
+
+document.querySelector( ".top-content").children[0].children[0].textContent = (siteContent["main-content"]["features-h4"])
+document.querySelector(".top-content").children[0].children[1].textContent = (siteContent["main-content"]["features-content"])
+
+document.querySelector(".top-content").children[1].children[0].textContent = (siteContent["main-content"]["about-h4"])
+document.querySelector(".top-content").children[1].children[1].textContent = (siteContent["main-content"]["about-content"]);
+
+
+let barLogo = document.getElementById("middle-img");
+barLogo.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+document.querySelector(".bottom-content").children[0].children[0].textContent = (siteContent["main-content"]["services-h4"]);
+document.querySelector(".bottom-content").children[0].children[1].textContent = (siteContent["main-content"]["services-content"])
+
+document.querySelector(".bottom-content").children[1].children[0].textContent = (siteContent["main-content"]["product-h4"])
+document.querySelector(".bottom-content").children[1].children[1].textContent = (siteContent["main-content"]["product-content"])
+
+document.querySelector(".bottom-content").children[2].children[0].textContent = (siteContent["main-content"]["vision-h4"])
+document.querySelector(".bottom-content").children[2].children[1].textContent = (siteContent["main-content"]["vision-content"]);
+
+//Contact
+
+document.querySelector(".contact").children[0].textContent = (siteContent["contact"]['contact-h4']);
+document.querySelector(".contact").children[1].textContent = (siteContent["contact"]["address"]);
+document.querySelector(".contact").children[2].textContent = (siteContent["contact"]["phone"]);
+document.querySelector(".contact").children[3].textContent = (siteContent["contact"]["email"]);
+
+document.querySelector('footer').textContent = (siteContent["footer"]["copyright"]);
